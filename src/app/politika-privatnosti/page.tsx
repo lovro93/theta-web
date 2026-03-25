@@ -33,7 +33,9 @@ Podatke ne koristimo u marketinške svrhe bez vašeg izričitog pristanka.`,
   },
   {
     title: "4. Čuvanje i brisanje podataka",
-    content: `Vaše podatke čuvamo onoliko dugo koliko je potrebno za obradu vašeg upita, a najdulje 2 godine od zadnje komunikacije. Nakon tog roka podaci se brišu, osim ako zakon ne nalaže dulje čuvanje.`,
+    content: `Vaše podatke čuvamo onoliko dugo koliko je potrebno za obradu vašeg upita, a najdulje 2 godine od zadnje komunikacije. Nakon tog roka podaci se brišu, osim ako zakon ne nalaže dulje čuvanje.
+
+Ako želite da vaše podatke obrišemo prije isteka navedenog roka, molimo vas da nam se javite na: dora@theta.hr — odgovorit ćemo i postupiti po zahtjevu u roku od 30 dana.`,
   },
   {
     title: "5. Dijeljenje podataka s trećim stranama",
