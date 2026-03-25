@@ -7,7 +7,7 @@ const contactItems = [
   { label: "OIB", value: "57123137025", href: null },
   { label: "Sjedište obrta", value: "Vukovarska cesta 118, 31000 Osijek", href: null },
   { label: "Poslovna jedinica", value: "Ulica Ivana Gundulića 5, 31000 Osijek", href: null },
-  { label: "Mobitel", value: "091 938 8841", href: "tel:0919388841" },
+  { label: "Mobitel", value: "+385 91 938 8841", href: "tel:+385919388841" },
   { label: "E-mail", value: "dora@theta.hr", href: "mailto:dora@theta.hr" },
 ];
 

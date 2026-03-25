@@ -51,10 +51,10 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <p className="text-sm" style={{ color: "var(--text-muted)" }}>Vukovarska cesta 118, Osijek</p>
               <p className="text-sm" style={{ color: "var(--text-muted)" }}>Ul. Ivana Gundulića 5, 31000 Osijek</p>
-              <a href="tel:0919388841" className="hover-gold text-sm transition-colors"
+              <a href="tel:+385919388841" className="hover-gold text-sm transition-colors"
                 style={{ color: "var(--text-muted)" }}
               >
-                091 938 8841
+                +385 91 938 8841
               </a>
               <a href="mailto:dora@theta.hr" className="hover-gold text-sm transition-colors"
                 style={{ color: "var(--text-muted)" }}
@@ -69,7 +69,7 @@ export default function Footer() {
           style={{ borderTop: "1px solid var(--border)" }}
         >
           <p className="text-xs" style={{ color: "rgba(107,114,128,0.6)" }}>
-            © {new Date().getFullYear()} Theta Obrt za usluge. Sva prava pridržana.
+            © {new Date().getFullYear()} Theta Obrt za usluge. Sva prava pridržana. · OIB: 57123137025
           </p>
           <p className="text-xs" style={{ color: "rgba(107,114,128,0.4)" }}>
             Izrađeno s pažnjom.

@@ -164,8 +164,8 @@ export default function Home() {
             <Link href="/kontakt" className="gold-gradient-bg text-black font-bold px-10 py-4 hover:opacity-90 transition-opacity text-sm" style={{ letterSpacing: "0.04em" }}>
               Pošaljite upit
             </Link>
-            <a href="tel:0919388841" className="text-sm font-medium px-8 py-4" style={{ border: "1px solid var(--border-gold)", color: "var(--gold)" }}>
-              091 938 8841
+            <a href="tel:+385919388841" className="text-sm font-medium px-8 py-4" style={{ border: "1px solid var(--border-gold)", color: "var(--gold)" }}>
+              +385 91 938 8841
             </a>
           </div>
         </div>
