@@ -71,9 +71,19 @@ export default function Footer() {
           <p className="text-xs" style={{ color: "rgba(240,237,232,0.5)" }}>
             © {new Date().getFullYear()} Theta Obrt za usluge. Sva prava pridržana. · OIB: 57123137025
           </p>
-          <p className="text-xs" style={{ color: "rgba(240,237,232,0.35)" }}>
-            Izrađeno s pažnjom.
-          </p>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/politika-privatnosti"
+              className="text-xs hover-gold transition-colors"
+              style={{ color: "rgba(240,237,232,0.4)" }}
+            >
+              Politika privatnosti
+            </Link>
+            <span className="text-xs" style={{ color: "rgba(240,237,232,0.2)" }}>·</span>
+            <p className="text-xs" style={{ color: "rgba(240,237,232,0.4)" }}>
+              Izrađeno s pažnjom.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BackgroundDecor from "@/components/BackgroundDecor";
+import CookieConsent from "@/components/CookieConsent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
           <main className="flex-1 pt-20">{children}</main>
           <Footer />
         </div>
+        <CookieConsent />
       </body>
     </html>
   );

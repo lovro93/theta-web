@@ -15,7 +15,8 @@
       "Bash(where python:*)",
       "Bash(where py:*)",
       "Bash(node -e \":*)",
-      "Bash(node -e \"const z = require\\(''''adm-zip''''\\); console.log\\(''''ok''''\\)\")"
+      "Bash(node -e \"const z = require\\(''''adm-zip''''\\); console.log\\(''''ok''''\\)\")",
+      "Bash(npm run:*)"
     ]
   }
 }
