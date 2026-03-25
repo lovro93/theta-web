@@ -76,7 +76,7 @@ export default function UslugePage() {
                 {/* Left */}
                 <div className="lg:col-span-1 flex flex-col gap-4">
                   <div className="flex items-center gap-4">
-                    <span className="text-3xl font-bold" style={{ color: "rgba(201,168,76,0.2)" }}>{s.num}</span>
+                    <span className="text-3xl font-bold" style={{ color: "rgba(201,168,76,0.5)" }}>{s.num}</span>
                     <span className="text-xl">{s.icon}</span>
                   </div>
                   <h2 className="service-card-title text-xl font-bold" style={{ color: "var(--text)" }}>{s.title}</h2>
@@ -140,7 +140,7 @@ export default function UslugePage() {
           {process.map((step, i) => (
             <div key={step.title} className="flex items-start gap-8 py-8"
               style={{ borderBottom: i < process.length - 1 ? "1px solid var(--border)" : "none" }}>
-              <span className="text-3xl font-bold flex-shrink-0" style={{ color: "rgba(201,168,76,0.25)", fontVariantNumeric: "tabular-nums" }}>{step.num}</span>
+              <span className="text-3xl font-bold flex-shrink-0" style={{ color: "rgba(201,168,76,0.5)", fontVariantNumeric: "tabular-nums" }}>{step.num}</span>
               <div>
                 <h3 className="font-semibold text-base mb-2" style={{ color: "var(--text)" }}>{step.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "rgba(240,237,232,0.55)" }}>{step.desc}</p>
