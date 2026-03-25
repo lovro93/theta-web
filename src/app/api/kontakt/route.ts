@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Jednostavan in-memory rate limiter: max 3 zahtjeva po IP-u u 10 minuta
 const attempts = new Map<string, { count: number; resetAt: number }>();
@@ -57,6 +56,7 @@ export async function POST(req: NextRequest) {
     const safeEmail   = sanitize(email);
     const safeMessage = sanitize(poruka);
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
       from: "Theta Web <onboarding@resend.dev>",
       to: "lovro.pavicic93@gmail.com",
