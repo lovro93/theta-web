@@ -68,10 +68,10 @@ export default function Footer() {
         <div className="mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4"
           style={{ borderTop: "1px solid var(--border)" }}
         >
-          <p className="text-xs" style={{ color: "rgba(107,114,128,0.6)" }}>
+          <p className="text-xs" style={{ color: "rgba(240,237,232,0.5)" }}>
             © {new Date().getFullYear()} Theta Obrt za usluge. Sva prava pridržana. · OIB: 57123137025
           </p>
-          <p className="text-xs" style={{ color: "rgba(107,114,128,0.4)" }}>
+          <p className="text-xs" style={{ color: "rgba(240,237,232,0.35)" }}>
             Izrađeno s pažnjom.
           </p>
         </div>
