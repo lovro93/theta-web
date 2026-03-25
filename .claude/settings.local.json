@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"C:\\\\Users\\\\lovro\\\\Desktop\\\\logo theta\\\\Logo Files\\\\For Web\\\\svg\\\\Color logo - no background.svg\" \"C:\\\\Users\\\\lovro\\\\Desktop\\\\Theta\\\\public\\\\logo-color.svg\")",
+      "Bash(cp \"C:\\\\Users\\\\lovro\\\\Desktop\\\\logo theta\\\\Logo Files\\\\For Web\\\\svg\\\\White logo - no background.svg\" \"C:\\\\Users\\\\lovro\\\\Desktop\\\\Theta\\\\public\\\\logo-white.svg\")",
+      "Bash(cp \"C:\\\\Users\\\\lovro\\\\Desktop\\\\logo theta\\\\Logo Files\\\\For Web\\\\svg\\\\Black logo - no background.svg\" \"C:\\\\Users\\\\lovro\\\\Desktop\\\\Theta\\\\public\\\\logo-black.svg\")",
+      "Bash(npm install:*)",
+      "Bash(cmd /c \"npm install resend\")",
+      "Bash(cmd /c \"npm install resend 2>&1\")",
+      "Bash(cmd /c \"cd C:\\\\Users\\\\lovro\\\\Desktop\\\\Theta && npm install resend\")",
+      "Read(//c/Users/lovro/Desktop/**)",
+      "Bash(pandoc \"web stranica.docx\" -o web_stranica.md)",
+      "Bash(python -c \":*)",
+      "Bash(where python3:*)",
+      "Bash(where python:*)",
+      "Bash(where py:*)",
+      "Bash(node -e \":*)",
+      "Bash(node -e \"const z = require\\(''''adm-zip''''\\); console.log\\(''''ok''''\\)\")"
+    ]
+  }
+}

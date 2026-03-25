@@ -1,26 +1,154 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #000000;
+  --bg-1: #0a0a0a;
+  --bg-2: #111111;
+  --bg-3: #1a1a1a;
+  --bg-4: #222222;
+  --gold: #c9a84c;
+  --gold-light: #faf0a1;
+  --gold-dark: #b98947;
+  --gold-dim: rgba(201, 168, 76, 0.12);
+  --text: #f0ede8;
+  --text-muted: #8a8f9a;
+  --text-subtle: #b0b5bf;
+  --border: rgba(255,255,255,0.09);
+  --border-gold: rgba(201, 168, 76, 0.35);
+  --background: var(--bg);
+  --foreground: var(--text);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background: var(--bg) !important;
+  color: var(--text);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Gold text gradient */
+.gold-gradient {
+  background: linear-gradient(110deg, var(--gold-dark) 0%, var(--gold-light) 60%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gold background gradient */
+.gold-gradient-bg {
+  background: linear-gradient(110deg, var(--gold-dark) 0%, var(--gold-light) 70%, var(--gold) 100%);
+}
+
+/* Card with gold top border */
+.card-gold {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  position: relative;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card-gold::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold-dark), var(--gold-light), var(--gold-dark), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card-gold:hover::before {
+  opacity: 1;
+}
+
+.card-gold:hover {
+  border-color: var(--border-gold);
+}
+
+/* Noise texture overlay */
+.noise::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Gold divider line */
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dark), var(--gold-light), var(--gold-dark), transparent);
+  opacity: 0.25;
+}
+
+/* Hover gold color */
+.hover-gold:hover {
+  color: var(--gold) !important;
+}
+
+/* Nav link with sliding gold underline */
+.nav-link .nav-underline {
+  width: 0%;
+  transition: width 0.25s ease;
+}
+.nav-link:hover .nav-underline,
+.nav-link.active .nav-underline {
+  width: 100%;
+}
+.nav-link:hover {
+  color: var(--gold) !important;
+}
+
+/* Hover gold border */
+.hover-gold-border:hover {
+  border-color: var(--gold) !important;
+  color: var(--gold) !important;
+}
+
+/* Service card hover */
+.service-cell:hover {
+  background: var(--bg-2) !important;
+}
+.service-cell:hover .service-top-line {
+  opacity: 1 !important;
+}
+.service-cell:hover .service-title {
+  color: var(--gold) !important;
+}
+
+/* Bordered service card */
+.service-card {
+  border: 1px solid var(--border);
+  transition: border-color 0.25s ease;
+  cursor: pointer;
+}
+.service-card:hover {
+  border-color: var(--gold) !important;
+}
+.service-card:hover .service-card-title {
+  color: var(--gold);
+}
+.service-card-title {
+  transition: color 0.25s ease;
 }
