@@ -63,7 +63,7 @@ export default function Home() {
                 Naše usluge →
               </Link>
             </div>
-            <p className="text-xs max-w-md leading-relaxed" style={{ color: "rgba(240,237,232,0.35)" }}>
+            <p className="text-sm max-w-md leading-relaxed" style={{ color: "rgba(240,237,232,0.6)" }}>
               Suradnju započinjemo kratkim uvodnim razgovorom kako bismo razumjeli vaše poslovanje
               i procijenili optimalan model suradnje.
             </p>

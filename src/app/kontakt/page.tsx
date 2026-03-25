@@ -3,7 +3,9 @@
 import { useState } from "react";
 
 const contactItems = [
-  { label: "Sjedište obrta", value: "Vukovarska cesta 118, Osijek", href: null },
+  { label: "Naziv obrta", value: "Theta obrt za usluge vl. Dora Ivanić", href: null },
+  { label: "OIB", value: "57123137025", href: null },
+  { label: "Sjedište obrta", value: "Vukovarska cesta 118, 31000 Osijek", href: null },
   { label: "Poslovna jedinica", value: "Ulica Ivana Gundulića 5, 31000 Osijek", href: null },
   { label: "Mobitel", value: "091 938 8841", href: "tel:0919388841" },
   { label: "E-mail", value: "dora@theta.hr", href: "mailto:dora@theta.hr" },
@@ -49,9 +51,9 @@ export default function KontaktPage() {
             <div className="h-px w-8" style={{ background: "linear-gradient(90deg, var(--gold-dark), var(--gold-light))" }} />
             <span className="text-xs font-semibold uppercase tracking-[0.35em]" style={{ color: "var(--gold)" }}>Kontakt</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-5">Stupite u kontakt</h1>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-5">Kontakt i upiti</h1>
           <p className="max-w-xl text-lg leading-relaxed" style={{ color: "rgba(240,237,232,0.6)" }}>
-            Javite nam se s pitanjem ili upitom za suradnju – odgovaramo brzo i jasno.
+            Za upit, ponudu ili dogovor razgovora, slobodno nam se obratite. Theta knjigovodstveni servis pristupa svakom klijentu individualno, s ciljem razumijevanja stvarnih potreba poslovanja i definiranja optimalnog modela suradnje.
           </p>
         </div>
       </section>

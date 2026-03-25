@@ -120,7 +120,7 @@ export default function ONamaPage() {
           {values.map((v, i) => (
             <div key={v.title} className="flex flex-col gap-3">
               <div className="flex items-center gap-4">
-                <span className="text-4xl font-bold" style={{ color: "rgba(201,168,76,0.2)", fontVariantNumeric: "tabular-nums" }}>
+                <span className="text-4xl font-bold" style={{ color: "rgba(201,168,76,0.5)", fontVariantNumeric: "tabular-nums" }}>
                   0{i + 1}
                 </span>
                 <div className="h-px flex-1" style={{ background: "var(--border)" }} />
