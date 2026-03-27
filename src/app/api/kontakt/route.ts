@@ -58,7 +58,7 @@ export async function POST(req: NextRequest) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { error } = await resend.emails.send({
-      from: "Theta Web <onboarding@resend.dev>",
+      from: "Theta Web <noreply@theta-knjigovodstvo.com.hr>",
       to: "dora@theta.hr",
       subject: `Nova poruka s web stranice – ${safeName}`,
       html: `
